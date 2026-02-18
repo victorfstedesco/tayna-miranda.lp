@@ -198,7 +198,7 @@
                         <div class="h-px w-12 bg-psi-terra"></div>
                         <div>
                             <p class="font-serif text-2xl text-psi-green dark:text-psi-sand italic">Tayná Miranda</p>
-                            <p class="text-xs uppercase tracking-widest text-psi-terra">CRP 00/00000</p>
+                            <p class="text-xs uppercase tracking-widest text-psi-terra">CRP 08/35118</p>
                         </div>
                     </div>
                 </div>
@@ -266,28 +266,149 @@
         </section>
 
         <section id="contato" class="py-24 px-6 md:px-20 bg-psi-bg dark:bg-[#1a1f1a] relative transition-colors duration-300">
-            <div class="max-w-5xl mx-auto border-t border-psi-green/10 dark:border-gray-700/30 pt-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div class="max-w-6xl mx-auto">
                 
-                <div class="space-y-6 reveal">
-                    <h2 class="font-serif text-5xl md:text-6xl text-psi-green dark:text-psi-sand">Vamos conversar?</h2>
-                    <p class="text-psi-text dark:text-gray-400 font-light max-w-sm text-lg">
-                        Agende sua consulta via WhatsApp ou envie uma mensagem para tirar dúvidas.
+                <div class="text-center mb-12 reveal">
+                    <h2 class="font-serif text-4xl md:text-5xl text-psi-green dark:text-psi-sand mb-4">
+                        Agende sua sessão
+                    </h2>
+                    <p class="text-psi-text dark:text-gray-400 font-light text-lg">
+                        Escolha o formato que melhor se adapta à sua rotina.
                     </p>
-                    <a href="https://wa.me/5544984614624" target="_blank" class="inline-block bg-psi-terra text-white px-10 py-4 rounded hover:bg-psi-green dark:hover:bg-psi-terra/80 transition duration-300 shadow-xl btn-hover-effect text-sm font-bold tracking-widest uppercase">
-                        Iniciar Atendimento
-                    </a>
                 </div>
 
-                <div class="text-left md:text-right space-y-3 text-sm text-psi-text/60 dark:text-gray-500 reveal delay-100">
-                    <p class="font-bold text-psi-green dark:text-psi-sand">Tayná Miranda</p>
-                    <p>Psicóloga Clínica</p>
-                    <p>São Paulo, SP</p>
-                    <div class="flex md:justify-end gap-4 pt-4">
-                        <a href="#" class="hover:text-psi-terra transition">Instagram</a>
-                        <a href="#" class="hover:text-psi-terra transition">Email</a>
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+                    <!-- Formulário -->
+                    <form id="agendamento-form" class="space-y-6 reveal delay-100">
+                    
+                    <!-- Nome Completo -->
+                    <div>
+                        <label for="nome" class="block text-sm font-medium text-psi-green dark:text-gray-300 mb-2">
+                            Nome completo
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nome" 
+                            name="nome" 
+                            placeholder="Seu nome"
+                            required
+                            class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-psi-sand dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-psi-terra focus:border-transparent text-psi-text dark:text-gray-200 placeholder-gray-400 transition-all"
+                        >
                     </div>
-                    <p class="pt-4 text-xs opacity-50">&copy; 2026 Todos os direitos reservados.</p>
+
+                    <!-- Assunto -->
+                    <div>
+                        <label for="assunto" class="block text-sm font-medium text-psi-green dark:text-gray-300 mb-2">
+                            Assunto
+                        </label>
+                        <textarea 
+                            id="assunto" 
+                            name="assunto" 
+                            rows="4"
+                            placeholder="Como podemos ajudar?"
+                            required
+                            class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-psi-sand dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-psi-terra focus:border-transparent text-psi-text dark:text-gray-200 placeholder-gray-400 transition-all resize-none"
+                        ></textarea>
+                    </div>
+
+                    <!-- Modalidade Preferida -->
+                    <div>
+                        <label class="block text-sm font-medium text-psi-green dark:text-gray-300 mb-4">
+                            Modalidade preferida
+                        </label>
+                        <div class="space-y-3">
+                            
+                            <!-- Presencial -->
+                            <label class="flex items-start p-4 bg-white dark:bg-gray-800 border-2 border-psi-sand dark:border-gray-700 rounded-lg cursor-pointer hover:border-psi-terra dark:hover:border-psi-terra transition-all group">
+                                <input 
+                                    type="radio" 
+                                    name="modalidade" 
+                                    value="Presencial - Av. Brasil 4312 zona 1 - Centro Empresarial Edifício Transamérica, Andar 1 Sala 10"
+                                    required
+                                    class="mt-1 w-5 h-5 text-psi-terra focus:ring-psi-terra border-gray-300"
+                                >
+                                <div class="ml-4 flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <svg class="w-5 h-5 text-psi-green dark:text-psi-sand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                        <span class="font-semibold text-psi-text dark:text-gray-200">Presencial</span>
+                                        <span class="ml-auto text-xs font-bold uppercase tracking-wider text-psi-terra bg-psi-terra/10 px-2 py-1 rounded">Maringá</span>
+                                    </div>
+                                    <p class="text-sm text-psi-text/70 dark:text-gray-400">Av. Brasil 4312 zona 1</p>
+                                    <p class="text-xs text-psi-text/60 dark:text-gray-500 mt-1">Ed. Transamérica - Andar 1 Sala 10</p>
+                                </div>
+                            </label>
+
+                            <!-- Online -->
+                            <label class="flex items-start p-4 bg-white dark:bg-gray-800 border-2 border-psi-sand dark:border-gray-700 rounded-lg cursor-pointer hover:border-psi-terra dark:hover:border-psi-terra transition-all group">
+                                <input 
+                                    type="radio" 
+                                    name="modalidade" 
+                                    value="Online - Sessões via Google Meet"
+                                    class="mt-1 w-5 h-5 text-psi-terra focus:ring-psi-terra border-gray-300"
+                                >
+                                <div class="ml-4 flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <svg class="w-5 h-5 text-psi-green dark:text-psi-sand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span class="font-semibold text-psi-text dark:text-gray-200">Online</span>
+                                        <span class="ml-auto text-xs font-bold uppercase tracking-wider text-psi-terra bg-psi-terra/10 px-2 py-1 rounded">Mundo</span>
+                                    </div>
+                                    <p class="text-sm text-psi-text/70 dark:text-gray-400">Sessões via Google Meet</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Botão de Envio -->
+                    <button 
+                        type="submit"
+                        class="w-full bg-psi-green dark:bg-psi-terra text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-lg hover:bg-psi-terra dark:hover:bg-psi-green transition duration-300 shadow-xl btn-hover-effect flex items-center justify-center gap-3"
+                    >
+                        Enviar via WhatsApp
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Mapa -->
+                <div class="reveal delay-200">
+                    <div class="sticky top-24">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-xl border border-psi-sand dark:border-gray-700">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.8584567893705!2d-51.942449724477906!3d-23.412446857678386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0e6c8c4c3a7%3A0x8ddea12c9c8e5d8f!2sAv.%20Brasil%2C%204312%20-%20Zona%2001%2C%20Maring%C3%A1%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1708291234567!5m2!1spt-BR!2sbr"
+                                width="100%" 
+                                height="500" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="w-full h-[500px]"
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="max-w-5xl mx-auto mt-20 pt-12 border-t border-psi-green/10 dark:border-gray-700/30">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                    <div class="space-y-2 text-sm text-psi-text/60 dark:text-gray-500">
+                        <p class="font-bold text-psi-green dark:text-psi-sand">Tayná Miranda</p>
+                        <p>Psicóloga Clínica | CRP 08/35118</p>
+                        <p>Maringá - PR</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-psi-text/60 dark:text-gray-500 hover:text-psi-terra transition">Instagram</a>
+                        <a href="#" class="text-psi-text/60 dark:text-gray-500 hover:text-psi-terra transition">Email</a>
+                    </div>
+                </div>
+                <p class="text-center text-xs text-psi-text/40 dark:text-gray-600 mt-8">&copy; 2026 Todos os direitos reservados.</p>
             </div>
         </section>
 
@@ -352,6 +473,41 @@
 
             const elements = document.querySelectorAll('.reveal');
             elements.forEach(el => observer.observe(el));
+        });
+
+        // Lógica do Formulário de Agendamento
+        const agendamentoForm = document.getElementById('agendamento-form');
+        
+        agendamentoForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Capturar os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const assunto = document.getElementById('assunto').value;
+            const modalidade = document.querySelector('input[name="modalidade"]:checked');
+            
+            if (!modalidade) {
+                alert('Por favor, selecione uma modalidade de atendimento.');
+                return;
+            }
+            
+            // Montar a mensagem do WhatsApp
+            const mensagem = `Olá! Gostaria de agendar uma sessão de avaliação.\n\n` +
+                           `*Nome:* ${nome}\n` +
+                           `*Assunto:* ${assunto}\n` +
+                           `*Modalidade:* ${modalidade.value}`;
+            
+            // Codificar a mensagem para URL
+            const mensagemCodificada = encodeURIComponent(mensagem);
+            
+            // Número do WhatsApp (formato internacional sem + e sem espaços)
+            const numeroWhatsApp = '5544984614624';
+            
+            // Criar o link do WhatsApp
+            const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+            
+            // Abrir o WhatsApp
+            window.open(linkWhatsApp, '_blank');
         });
     </script>
 </body>
